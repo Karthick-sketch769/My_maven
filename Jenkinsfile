@@ -4,7 +4,7 @@ pipeline
 
     stages 
     {
-        stage('Build') 
+        stage('get the source code') 
         {
             steps 
             {
@@ -12,7 +12,7 @@ pipeline
             }
         }
 
-        stage('update my this part') 
+        stage('Test the scheduled build') 
         {
             steps 
             {
@@ -20,7 +20,7 @@ pipeline
             }
         }
 
-        stage('hello  kolavari webhook ') 
+        stage('jenkins task') 
         {
             steps 
             {
@@ -34,7 +34,7 @@ pipeline
 
     	always
     	{
-    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'saketmehta65@gmail.com'
+    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'karthicksethu189@gmail.com'
     	}
 
     }
